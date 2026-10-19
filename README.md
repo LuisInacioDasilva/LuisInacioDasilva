@@ -21,7 +21,7 @@ Na **Innovation Brindes**, construí integrações e evoluí fluxos de **CRM, ER
     <td>
       <sub>PROJETO EM DESTAQUE · EM PRODUÇÃO</sub>
       <h3>🌐 <a href="https://innovationbrindes.com.br/">Site da Innovation Brindes ↗</a></h3>
-      <p>Atuo no desenvolvimento e na evolução do site, conectando experiência de compra, APIs e integrações à operação comercial.</p>
+      <p>Desenvolvi o back-end completo do site da Innovation Brindes e também partes do front-end. Criei as integrações, as regras de negócio e a comunicação com o banco de dados que fazem o site funcionar no dia a dia.</p>
     </td>
   </tr>
 </table>

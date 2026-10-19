@@ -95,16 +95,16 @@
     <g class="float">
       <rect x="1013" y="111" width="125" height="69" rx="10" fill="url(#card)" stroke="#3D8591"/>
       <text x="1028" y="137" fill="#7DE2D5" font-size="13">02 / ERP</text>
-      <text x="1028" y="157" fill="#F2FCFE" font-size="17" font-weight="700">SANKHYA</text>
-      <text x="1028" y="173" fill="#9AB9C6" font-size="11">Integração ERP</text>
+      <text x="1028" y="157" fill="#F2FCFE" font-size="17" font-weight="700">ERPs</text>
+      <text x="1028" y="173" fill="#9AB9C6" font-size="11">Sistemas externos</text>
     </g>
     <rect x="836" y="166" width="151" height="77" rx="12" fill="#113445" stroke="#5EEAD4" stroke-width="2" filter="url(#glow)"/>
     <text x="853" y="192" fill="#9BE9D9" font-size="13">BACK-END / CORE</text>
     <text x="853" y="219" fill="#F5FDFF" font-size="18" font-weight="700">APIs + REGRAS</text>
-    <rect x="647" y="249" width="151" height="69" rx="10" fill="url(#card)" stroke="#3D8591"/>
+    <rect x="647" y="249" width="166" height="69" rx="10" fill="url(#card)" stroke="#3D8591"/>
     <text x="663" y="275" fill="#7DE2D5" font-size="13">03 / DADOS</text>
-    <text x="663" y="295" fill="#F2FCFE" font-size="16" font-weight="700">SQL · MariaDB</text>
-    <text x="663" y="311" fill="#9AB9C6" font-size="11">Postgres · Conciliação</text>
+    <text x="663" y="295" fill="#F2FCFE" font-size="17" font-weight="700">PostgreSQL</text>
+    <text x="663" y="311" fill="#9AB9C6" font-size="11">MariaDB · SQL Server</text>
     <rect x="1013" y="249" width="125" height="69" rx="10" fill="url(#card)" stroke="#3D8591"/>
     <text x="1028" y="275" fill="#7DE2D5" font-size="13">04 / CLOUD + IA</text>
     <text x="1028" y="295" fill="#F2FCFE" font-size="15" font-weight="700">S3 · LLMs</text>

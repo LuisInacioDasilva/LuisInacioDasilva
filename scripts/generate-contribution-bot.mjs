@@ -93,12 +93,11 @@ const cells = weeks.flatMap((week, weekIndex) =>
 
 const pathParts = [];
 const left = gridX + cell / 2;
-const right = gridX + gridWidth + cell / 2;
 for (let row = 0; row < 7; row += 1) {
-  const y = gridY + row * step + cell / 2;
-  if (row === 0) pathParts.push(`M ${left} ${y}`);
-  pathParts.push(row % 2 === 0 ? `H ${right}` : `H ${left}`);
-  if (row < 6) pathParts.push(`A ${step / 2} ${step / 2} 0 0 ${row % 2 === 0 ? 1 : 0} ${row % 2 === 0 ? right : left} ${y + step}`);
+  const y = row * step;
+  if (row === 0) pathParts.push('M 0 0');
+  pathParts.push(row % 2 === 0 ? `H ${gridWidth}` : 'H 0');
+  if (row < 6) pathParts.push(`A ${step / 2} ${step / 2} 0 0 ${row % 2 === 0 ? 1 : 0} ${row % 2 === 0 ? gridWidth : 0} ${y + step}`);
 }
 const robotPath = pathParts.join(' ');
 
@@ -171,7 +170,8 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${
 
   <g>${cells}</g>
 
-  <g>
+  <g transform="translate(${left} ${gridY + cell / 2})">
+    <g>
     <animateMotion dur="${robotDuration}s" calcMode="paced" repeatCount="indefinite" rotate="0" path="${robotPath}" />
     <circle cx="0" cy="0" r="24" fill="url(#halo)" />
     <circle cx="0" cy="0" r="13" fill="none" stroke="#9CF5D5" stroke-opacity=".56" stroke-width="1" />
@@ -189,6 +189,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${
       <path d="M-3 9Q0 11 3 9" fill="none" stroke="#176479" stroke-width="1.2" stroke-linecap="round" />
       <path d="M0 -13V-17" stroke="#B5F8E8" stroke-width="1.8" stroke-linecap="round" />
       <circle class="antenna" cx="0" cy="-19" r="2.6" fill="#4ADE80" filter="url(#glow)" />
+    </g>
     </g>
   </g>
 

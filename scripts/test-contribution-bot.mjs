@@ -16,6 +16,7 @@ assert.match(svg, /viewBox="0 0 980 270"/);
 assert.match(svg, /calcMode="paced"/);
 assert.equal((svg.match(/A 8 8 0 0 [01]/g) ?? []).length, 6);
 assert.match(svg, /<rect x="-16" y="-13" width="32" height="26"/);
+assert.doesNotMatch(svg, /<g transform="translate\(/);
 
 console.log('Contribution bot characterization passed.');
 

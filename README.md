@@ -1,86 +1,71 @@
 <p align="center">
-  <img src="./assets/backend-banner.svg" width="100%" alt="Luis da Silva — Backend Engineer: Laravel, PHP, APIs, SQL e automações" />
+  <img src="./assets/systems-banner.svg" width="100%" alt="Luis da Silva — desenvolvedor back-end pleno, sistemas e dados" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/LuisInacioDasilva?tab=repositories"><img src="https://img.shields.io/badge/REPOSITÓRIOS-0B0F19?style=for-the-badge&logo=github&logoColor=white" alt="Repositórios" /></a>
-  <img src="https://img.shields.io/badge/BACKEND_FIRST-7C3AED?style=for-the-badge" alt="Backend first" />
-  <img src="https://img.shields.io/badge/BUILD_%E2%86%92_OBSERVE_%E2%86%92_IMPROVE-0891B2?style=for-the-badge" alt="Build, observe, improve" />
+  <strong>Desenvolvedor back-end pleno</strong> · mais de 5 anos construindo sistemas em produção
 </p>
 
-## Backend é onde eu trabalho melhor.
+<p align="center">
+  <a href="https://github.com/LuisInacioDasilva?tab=repositories">Repositórios</a> ·
+  <a href="https://github.com/Innovation-Brindes">Innovation Brindes</a>
+</p>
 
-Meu território é o pedaço que ninguém vê quando tudo funciona: **regra de negócio, integração, fila, banco, retry, log e recuperação de falha**.
+## Engenharia que sustenta a operação
 
-Hoje eu construo e mantenho sistemas de produção com **Laravel/PHP**, conecto ERP, atendimento e serviços externos, e uso **LLMs** quando eles resolvem operação de verdade — não para colocar “IA” no nome do projeto.
+Trabalho há mais de cinco anos com o ciclo completo de sistemas back-end: desenho de soluções, implementação, integração, banco de dados, diagnóstico de falhas e evolução de código que já está em produção. Meu foco é fazer regras de negócio complexas funcionarem de forma confiável no dia a dia.
 
-```text
-HTTP → Laravel → Service Layer → Queue / Job → Integrações
-                    │                │
-                    ├── SQL          ├── Webhooks
-                    ├── Auditoria    └── LLM tools
-                    └── Logs + retry + idempotência
-```
-
-## Laravel / PHP, sem firula.
+Meu repertório passa por **C, C#, PHP, Java, JavaScript/TypeScript, Node.js e Python**, com SQL como parte central do trabalho. Também há projetos em Kotlin, SQLite e outras tecnologias no histórico do GitHub. Já passei por fluxos de **CRM, ERP, vendas, pedidos, atendimento e automação**. Gosto especialmente dos pontos em que aplicação, dados e integrações precisam concordar entre si.
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <strong>01 — CORE BACKEND</strong><br><br>
-      APIs REST, autenticação, validação, services, jobs, queues, schedulers e regras que precisam continuar corretas depois do deploy.
+      <strong>01 / BACK-END</strong><br><br>
+      APIs, regras de negócio, autenticação, serviços, processamento assíncrono e manutenção de sistemas legados.
     </td>
     <td width="50%" valign="top">
-      <strong>02 — INTEGRAÇÕES</strong><br><br>
-      ERP, webhooks, mensageria, provedores externos, conciliação e fluxos com rastreabilidade de ponta a ponta.
+      <strong>02 / DADOS</strong><br><br>
+      SQL Server e PostgreSQL, consultas, modelagem, conciliação, integridade e rastreabilidade de alterações.
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <strong>03 — DADOS</strong><br><br>
-      SQL Server, PostgreSQL, modelagem, consultas, consistência, auditoria e correção segura de dados legados.
+      <strong>03 / INTEGRAÇÕES</strong><br><br>
+      ERP, APIs externas, webhooks, mensageria e fluxos que precisam continuar íntegros mesmo quando uma etapa falha.
     </td>
     <td width="50%" valign="top">
-      <strong>04 — LLM AUTOMATION</strong><br><br>
-      Saída estruturada, tools, contexto, classificação e automações com fallback, custo controlado e comportamento observável.
+      <strong>04 / AUTOMAÇÃO</strong><br><br>
+      n8n, rotinas operacionais, análise de dados e LLMs integrados a processos reais, com validação, tratamento de erro e acompanhamento.
     </td>
   </tr>
 </table>
 
-## Ferramentas que entram no meu deploy.
+## Tecnologias no meu repertório
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=php,laravel,ts,nodejs,python,postgres,linux,git,githubactions&theme=dark" alt="PHP, Laravel, TypeScript, Node.js, Python, PostgreSQL, Linux, Git e GitHub Actions" />
+  <img src="https://skillicons.dev/icons?i=c,cs,php,java,ts,nodejs,python,kotlin,postgres,sqlite,linux,git&theme=dark" alt="C, C#, PHP, Java, TypeScript, Node.js, Python, Kotlin, PostgreSQL, SQLite, Linux e Git" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/SQL_SERVER-111827?style=flat-square&logo=microsoftsqlserver&logoColor=EF4444" alt="SQL Server" />
-  <img src="https://img.shields.io/badge/SUPABASE-111827?style=flat-square&logo=supabase&logoColor=3ECF8E" alt="Supabase" />
-  <img src="https://img.shields.io/badge/OPENAI_API-111827?style=flat-square&logo=openai&logoColor=white" alt="OpenAI API" />
-  <img src="https://img.shields.io/badge/REST_%2F_WEBHOOKS-111827?style=flat-square&logo=fastapi&logoColor=22D3EE" alt="REST e Webhooks" />
+  <code>SQL Server</code> · <code>PostgreSQL</code> · <code>APIs</code> · <code>Laravel</code> · <code>n8n</code> · <code>LLMs</code>
 </p>
 
-## Regras do meu código.
+## IA aplicada e orquestração
 
-```php
-final class ProductionMindset
-{
-    public const RULES = [
-        'idempotency > hope',
-        'logs are part of the product',
-        'legacy code has context',
-        'boring deploys are good deploys',
-    ];
-}
-```
+Uso **LLMs, ferramentas de IA e n8n** para conectar informações, automatizar etapas e apoiar decisões dentro de sistemas existentes. O trabalho inclui classificação, tradução, extração de dados, integração com APIs e fluxos com acompanhamento humano quando necessário. A parte importante é o resultado chegar corretamente à operação e poder ser auditado.
 
-## Um bot patrulhando minhas contribuições.
+<details>
+<summary>Como este perfil é mantido</summary>
 
-<p align="center">
-  <img width="100%" alt="Robô animado percorrendo a grade real de contribuições do GitHub" src="https://raw.githubusercontent.com/LuisInacioDasilva/LuisInacioDasilva/output/contribution-bot.svg?v=20261019" />
-</p>
+O texto e o banner SVG ficam neste repositório. Para conferir o robô localmente, execute `node scripts/preview-contribution-bot.mjs`; o arquivo gerado fica em `dist/contribution-bot.svg`. O gerador de produção usa `GITHUB_TOKEN` e `GITHUB_USER` como variáveis de ambiente. Mudanças entram por branch e pull request; após o merge na `main`, o GitHub Actions atualiza o SVG no branch `output`. Para reverter, restaure o commit anterior por pull request e execute novamente o workflow.
+
+</details>
+
+## Contribuições em movimento
+
+O robô abaixo percorre uma visualização do meu calendário real de contribuições. Os dados são atualizados automaticamente pelo GitHub Actions.
 
 <p align="center">
-  <code>build → observe → fix → repeat</code>
+  <img width="100%" alt="Robô animado percorrendo uma visualização das contribuições reais de Luis da Silva" src="https://raw.githubusercontent.com/LuisInacioDasilva/LuisInacioDasilva/output/contribution-bot.svg?v=20261019b" />
 </p>
 

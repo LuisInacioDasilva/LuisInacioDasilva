@@ -104,17 +104,27 @@ const robotPath = pathParts.join(' ');
 const year = new Date().getUTCFullYear();
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="title desc">
   <title id="title">Contribution Bot de ${login}</title>
-  <desc id="desc">Um robô animado percorre a grade real de contribuições do GitHub.</desc>
+  <desc id="desc">Um robô animado percorre e ilumina as células da grade real de contribuições do GitHub.</desc>
   <defs>
     <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#07111D" />
       <stop offset="0.55" stop-color="#0B1721" />
       <stop offset="1" stop-color="#092319" />
     </linearGradient>
-    <linearGradient id="bot" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#7DD3FC" />
-      <stop offset="1" stop-color="#39D353" />
+    <linearGradient id="shell" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5EC9EA" />
+      <stop offset="0.56" stop-color="#28799B" />
+      <stop offset="1" stop-color="#18536B" />
     </linearGradient>
+    <linearGradient id="visor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#153F59" />
+      <stop offset="1" stop-color="#082536" />
+    </linearGradient>
+    <radialGradient id="eyes">
+      <stop offset="0" stop-color="#E5FFFF" />
+      <stop offset="0.55" stop-color="#84F2FF" />
+      <stop offset="1" stop-color="#2DD4BF" />
+    </radialGradient>
     <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
       <feGaussianBlur stdDeviation="3" result="blur" />
       <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
@@ -128,11 +138,13 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${
     .mono { font-family: "JetBrains Mono", "Cascadia Code", Consolas, monospace; }
     .eye { animation: blink 3.4s steps(2, start) infinite; }
     .antenna { animation: ping 1.8s ease-in-out infinite; }
-    .scan { animation: scan 1.2s ease-in-out infinite alternate; transform-origin: center; }
+    .scan { animation: scan 1.6s ease-in-out infinite alternate; }
+    .body { animation: hover 2.4s ease-in-out infinite; }
     @keyframes blink { 46%, 54% { opacity: .12; } }
     @keyframes ping { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
     @keyframes scan { from { opacity: .28; } to { opacity: .8; } }
-    @media (prefers-reduced-motion: reduce) { .eye, .antenna, .scan { animation: none; } }
+    @keyframes hover { 50% { transform: translateY(-2px); } }
+    @media (prefers-reduced-motion: reduce) { .eye, .antenna, .scan, .body { animation: none; } }
   </style>
 
   <rect width="${width}" height="${height}" rx="18" fill="url(#panel)" />
@@ -147,19 +159,30 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${
   <g>${cells}</g>
   <path d="${robotPath}" fill="none" stroke="#22D3EE" stroke-opacity="0.18" stroke-width="2" stroke-dasharray="3 7" />
 
-  <g filter="url(#glow)">
+  <g>
     <animateMotion dur="${robotDuration}s" repeatCount="indefinite" rotate="0" path="${robotPath}" />
-    <ellipse cx="0" cy="25" rx="20" ry="5" fill="#22D3EE" opacity=".27" />
-    <path class="scan" d="M16 -8L37 -16V24L16 7Z" fill="#22D3EE" opacity=".2" />
-    <path d="M-13 13L-17 21M13 13L17 21M-23 -2L-31 5M23 -2L31 5" fill="none" stroke="#7DD3FC" stroke-width="3" stroke-linecap="round" />
-    <rect x="-25" y="-21" width="50" height="38" rx="12" fill="#081B2B" stroke="url(#bot)" stroke-width="3" />
-    <rect x="-18" y="-14" width="36" height="22" rx="7" fill="#0D3042" />
-    <circle class="eye" cx="-9" cy="-4" r="4" fill="#7DD3FC" />
-    <circle class="eye" cx="9" cy="-4" r="4" fill="#7DD3FC" />
-    <path d="M-7 8Q0 13 7 8" fill="none" stroke="#9BE9A8" stroke-width="2" stroke-linecap="round" />
-    <path d="M0 -21V-29" stroke="#7DD3FC" stroke-width="3" stroke-linecap="round" />
-    <circle class="antenna" cx="0" cy="-33" r="4" fill="#39D353" />
-    <rect x="-7" y="16" width="14" height="4" rx="2" fill="#39D353" />
+    <ellipse cx="0" cy="25" rx="22" ry="5" fill="#22D3EE" opacity=".18" />
+    <path class="scan" d="M17 -9L40 -17V20L17 6Z" fill="#22D3EE" opacity=".18" />
+    <g class="body">
+      <path d="M-18 11L-29 15L-32 9M18 11L29 15L32 9" fill="none" stroke="#5EC9EA" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      <circle cx="-32" cy="8" r="3" fill="#9BE9A8" />
+      <circle cx="32" cy="8" r="3" fill="#9BE9A8" />
+      <rect x="-17" y="10" width="34" height="14" rx="6" fill="#164D63" stroke="#63D9E5" stroke-width="2" />
+      <rect x="-7" y="15" width="14" height="4" rx="2" fill="#39D353" />
+      <path d="M-10 23V26M10 23V26" stroke="#5EC9EA" stroke-width="3" stroke-linecap="round" />
+      <rect x="-28" y="-23" width="56" height="39" rx="13" fill="url(#shell)" stroke="#9BE9E8" stroke-width="2" />
+      <path d="M-23 -13Q-21 -20 -11 -20H11Q21 -20 23 -13" fill="none" stroke="#D7FFFF" stroke-opacity=".66" stroke-width="2" />
+      <rect x="-22" y="-15" width="44" height="24" rx="8" fill="url(#visor)" stroke="#194E60" />
+      <circle class="eye" cx="-10" cy="-4" r="5" fill="url(#eyes)" filter="url(#glow)" />
+      <circle class="eye" cx="10" cy="-4" r="5" fill="url(#eyes)" filter="url(#glow)" />
+      <circle cx="-9" cy="-6" r="1.4" fill="#F5FFFF" />
+      <circle cx="11" cy="-6" r="1.4" fill="#F5FFFF" />
+      <path d="M-5 5Q0 9 5 5" fill="none" stroke="#9BE9A8" stroke-width="1.8" stroke-linecap="round" />
+      <circle cx="-24" cy="5" r="2.3" fill="#4ADE80" />
+      <circle cx="24" cy="5" r="2.3" fill="#4ADE80" />
+      <path d="M0 -23V-30" stroke="#77DDEB" stroke-width="3" stroke-linecap="round" />
+      <circle class="antenna" cx="0" cy="-34" r="4.5" fill="#4ADE80" filter="url(#glow)" />
+    </g>
   </g>
 
   <g class="mono" font-size="11">

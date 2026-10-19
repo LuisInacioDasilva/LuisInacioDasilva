@@ -171,8 +171,8 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${
 
   <g>${cells}</g>
 
-  <g transform="translate(${left} ${gridY + cell / 2})">
-    <animateMotion dur="${robotDuration}s" calcMode="paced" additive="replace" repeatCount="indefinite" rotate="0" path="${robotPath}" />
+  <g>
+    <animateMotion dur="${robotDuration}s" calcMode="paced" repeatCount="indefinite" rotate="0" path="${robotPath}" />
     <circle cx="0" cy="0" r="24" fill="url(#halo)" />
     <circle cx="0" cy="0" r="13" fill="none" stroke="#9CF5D5" stroke-opacity=".56" stroke-width="1" />
     <g class="body">

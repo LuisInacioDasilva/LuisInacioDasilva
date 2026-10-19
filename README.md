@@ -16,6 +16,9 @@ Há mais de cinco anos, desenvolvo e sustento sistemas que fazem a operação ac
 
 Na **Innovation Brindes**, construí integrações e evoluí fluxos de **CRM, ERP, vendas, pedidos, layouts e atendimento**. Trabalho com diferentes linguagens e plataformas conforme o problema; o ponto comum é conectar regras, dados e serviços sem perder a rastreabilidade da operação.
 
+> **Projeto em destaque · Site da Innovation Brindes**  
+> Atuo no desenvolvimento e na evolução do site em produção, conectando experiência de compra, APIs e integrações à operação comercial.
+
 <table>
   <tr>
     <td width="50%" valign="top">

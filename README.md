@@ -77,7 +77,7 @@ final class ProductionMindset
 ## Um bot patrulhando minhas contribuições.
 
 <p align="center">
-  <img width="100%" alt="Robô animado percorrendo a grade real de contribuições do GitHub" src="https://raw.githubusercontent.com/LuisInacioDasilva/LuisInacioDasilva/output/contribution-bot.svg" />
+  <img width="100%" alt="Robô animado percorrendo a grade real de contribuições do GitHub" src="https://raw.githubusercontent.com/LuisInacioDasilva/LuisInacioDasilva/output/contribution-bot.svg?v=20261019" />
 </p>
 
 <p align="center">

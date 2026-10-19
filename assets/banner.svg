@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
-  <title id="title">Luis Inácio — Backend Engineer</title>
+  <title id="title">Luis da Silva — Backend Engineer</title>
   <desc id="desc">Banner animado com foco em Laravel, PHP, APIs, SQL e automações com LLM.</desc>
 
   <defs>
@@ -60,7 +60,7 @@
 
   <g class="sans">
     <text x="70" y="74" fill="#A78BFA" font-size="14" font-weight="700" letter-spacing="4">BACKEND ENGINEER // SÃO PAULO</text>
-    <text x="68" y="143" fill="#F8FAFC" font-size="52" font-weight="800" letter-spacing="1">LUIS INÁCIO</text>
+    <text x="68" y="143" fill="#F8FAFC" font-size="52" font-weight="800" letter-spacing="1">LUIS DA SILVA</text>
     <rect x="70" y="164" width="472" height="3" rx="1.5" fill="url(#accent)" />
     <text x="70" y="205" fill="#CBD5E1" font-size="21" font-weight="500">Laravel · PHP · APIs · SQL · LLM automation</text>
   </g>

@@ -11,6 +11,7 @@ const query = `
   query ContributionCalendar($login: String!) {
     user(login: $login) {
       contributionsCollection {
+        restrictedContributionsCount
         contributionCalendar {
           totalContributions
           weeks {
@@ -60,7 +61,9 @@ const step = cell + gap;
 const gridX = 62;
 const gridY = 84;
 const gridWidth = Math.max(1, weeks.length - 1) * step;
-const palette = ['#161B22', '#312E81', '#4F46E5', '#7C3AED', '#22D3EE'];
+const robotDuration = 105;
+const travelDistance = 7 * gridWidth + 6 * step;
+const palette = ['#111D24', '#0E4429', '#006D32', '#26A641', '#39D353'];
 
 const levelFor = (count) => {
   if (count === 0) return 0;
@@ -75,11 +78,14 @@ const cells = weeks.flatMap((week, weekIndex) =>
     const x = gridX + weekIndex * step;
     const y = gridY + day.weekday * step;
     const fill = palette[levelFor(day.contributionCount)];
-    const delay = ((weekIndex * 7 + day.weekday) % 53) / 53;
+    const distance = day.weekday * (gridWidth + step)
+      + (day.weekday % 2 === 0 ? weekIndex : weeks.length - 1 - weekIndex) * step;
+    const arrival = distance / travelDistance * robotDuration;
 
-    return `<rect class="cell" x="${x}" y="${y}" width="${cell}" height="${cell}" rx="2.5" fill="${fill}">
+    return `<rect class="cell" x="${x}" y="${y}" width="${cell}" height="${cell}" rx="2.5" fill="${fill}" stroke="#CFFFE8">
       <title>${day.date}: ${day.contributionCount} contribution${day.contributionCount === 1 ? '' : 's'}</title>
-      ${day.contributionCount ? `<animate attributeName="opacity" values="0.55;1;0.75" dur="3.2s" begin="-${delay.toFixed(2)}s" repeatCount="indefinite" />` : ''}
+      ${day.contributionCount ? `<animate attributeName="fill" values="${fill};#D1FAE5;${fill};${fill}" keyTimes="0;0.005;0.015;1" dur="${robotDuration}s" begin="${arrival.toFixed(2)}s" repeatCount="indefinite" />` : ''}
+      ${day.contributionCount ? `<animate attributeName="stroke-width" values="0;2.5;0;0" keyTimes="0;0.005;0.015;1" dur="${robotDuration}s" begin="${arrival.toFixed(2)}s" repeatCount="indefinite" />` : ''}
     </rect>`;
   }),
 ).join('\n');
@@ -101,20 +107,20 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${
   <desc id="desc">Um robô animado percorre a grade real de contribuições do GitHub.</desc>
   <defs>
     <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#080B14" />
-      <stop offset="0.55" stop-color="#111329" />
-      <stop offset="1" stop-color="#07151B" />
+      <stop offset="0" stop-color="#07111D" />
+      <stop offset="0.55" stop-color="#0B1721" />
+      <stop offset="1" stop-color="#092319" />
     </linearGradient>
     <linearGradient id="bot" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#A855F7" />
-      <stop offset="1" stop-color="#22D3EE" />
+      <stop offset="0" stop-color="#7DD3FC" />
+      <stop offset="1" stop-color="#39D353" />
     </linearGradient>
     <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
       <feGaussianBlur stdDeviation="3" result="blur" />
       <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
     </filter>
     <pattern id="microGrid" width="22" height="22" patternUnits="userSpaceOnUse">
-      <path d="M22 0H0V22" fill="none" stroke="#6366F1" stroke-opacity="0.045" />
+      <path d="M22 0H0V22" fill="none" stroke="#7DD3FC" stroke-opacity="0.055" />
     </pattern>
   </defs>
   <style>
@@ -126,41 +132,45 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${
     @keyframes blink { 46%, 54% { opacity: .12; } }
     @keyframes ping { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
     @keyframes scan { from { opacity: .28; } to { opacity: .8; } }
+    @media (prefers-reduced-motion: reduce) { .eye, .antenna, .scan { animation: none; } }
   </style>
 
   <rect width="${width}" height="${height}" rx="18" fill="url(#panel)" />
   <rect x="1" y="1" width="${width - 2}" height="${height - 2}" rx="17" fill="none" stroke="#334155" />
   <rect width="${width}" height="${height}" rx="18" fill="url(#microGrid)" />
 
-  <circle cx="24" cy="27" r="4" fill="#22D3EE" class="antenna" filter="url(#glow)" />
-  <text x="38" y="32" class="mono" fill="#67E8F9" font-size="13" font-weight="700" letter-spacing="2">CONTRIBUTION BOT // ${year}</text>
-  <text x="${width - 26}" y="32" class="mono" fill="#A78BFA" font-size="12" text-anchor="end">${calendar.totalContributions} COMMITS + EVENTS</text>
+  <circle cx="24" cy="27" r="4" fill="#39D353" class="antenna" filter="url(#glow)" />
+  <text x="38" y="32" class="mono" fill="#9BE9A8" font-size="13" font-weight="700" letter-spacing="2">CONTRIBUTION GRID // ${year}</text>
+  <text x="${width - 26}" y="32" class="mono" fill="#B6C8D0" font-size="12" text-anchor="end">${calendar.totalContributions.toLocaleString('pt-BR')} CONTRIBUIÇÕES</text>
   <path d="M24 49H${width - 24}" stroke="#334155" />
 
   <g>${cells}</g>
-  <path d="${robotPath}" fill="none" stroke="#22D3EE" stroke-opacity="0.08" stroke-width="2" stroke-dasharray="3 7" />
+  <path d="${robotPath}" fill="none" stroke="#22D3EE" stroke-opacity="0.18" stroke-width="2" stroke-dasharray="3 7" />
 
   <g filter="url(#glow)">
-    <animateMotion dur="26s" repeatCount="indefinite" rotate="0" path="${robotPath}" />
-    <line x1="0" y1="-13" x2="0" y2="-20" stroke="#C4B5FD" stroke-width="2" />
-    <circle class="antenna" cx="0" cy="-23" r="3" fill="#22D3EE" />
-    <rect x="-12" y="-13" width="24" height="20" rx="6" fill="#0B1020" stroke="url(#bot)" stroke-width="2" />
-    <circle class="eye" cx="-5" cy="-5" r="2" fill="#22D3EE" />
-    <circle class="eye" cx="5" cy="-5" r="2" fill="#22D3EE" />
-    <path d="M-5 2H5" stroke="#A78BFA" stroke-width="1.5" stroke-linecap="round" />
-    <path d="M-9 9V13M9 9V13" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" />
-    <path class="scan" d="M14 -10L27 -16V12L14 5Z" fill="#22D3EE" opacity="0.35" />
+    <animateMotion dur="${robotDuration}s" repeatCount="indefinite" rotate="0" path="${robotPath}" />
+    <ellipse cx="0" cy="25" rx="20" ry="5" fill="#22D3EE" opacity=".27" />
+    <path class="scan" d="M16 -8L37 -16V24L16 7Z" fill="#22D3EE" opacity=".2" />
+    <path d="M-13 13L-17 21M13 13L17 21M-23 -2L-31 5M23 -2L31 5" fill="none" stroke="#7DD3FC" stroke-width="3" stroke-linecap="round" />
+    <rect x="-25" y="-21" width="50" height="38" rx="12" fill="#081B2B" stroke="url(#bot)" stroke-width="3" />
+    <rect x="-18" y="-14" width="36" height="22" rx="7" fill="#0D3042" />
+    <circle class="eye" cx="-9" cy="-4" r="4" fill="#7DD3FC" />
+    <circle class="eye" cx="9" cy="-4" r="4" fill="#7DD3FC" />
+    <path d="M-7 8Q0 13 7 8" fill="none" stroke="#9BE9A8" stroke-width="2" stroke-linecap="round" />
+    <path d="M0 -21V-29" stroke="#7DD3FC" stroke-width="3" stroke-linecap="round" />
+    <circle class="antenna" cx="0" cy="-33" r="4" fill="#39D353" />
+    <rect x="-7" y="16" width="14" height="4" rx="2" fill="#39D353" />
   </g>
 
   <g class="mono" font-size="11">
     <text x="62" y="220" fill="#64748B">LOW</text>
     ${palette.map((color, index) => `<rect x="${92 + index * 18}" y="211" width="11" height="11" rx="2.5" fill="${color}" />`).join('')}
     <text x="187" y="220" fill="#64748B">HIGH</text>
-    <text x="${width - 30}" y="220" fill="#64748B" text-anchor="end">STATUS: PATROLLING THE GRID</text>
+    <text x="${width - 30}" y="220" fill="#7D9EAB" text-anchor="end">BOT ONLINE · GITHUB DATA</text>
   </g>
 </svg>`;
 
 await mkdir('dist', { recursive: true });
 await writeFile('dist/contribution-bot.svg', svg, 'utf8');
-console.log(`Generated contribution bot for ${login}: ${calendar.totalContributions} contributions.`);
+console.log(`Generated contribution bot for ${login}: ${calendar.totalContributions} contributions (${payload.data.user.contributionsCollection.restrictedContributionsCount} private counts shared).`);
 

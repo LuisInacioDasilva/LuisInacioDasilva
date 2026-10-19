@@ -63,6 +63,31 @@ Na **Innovation Brindes**, construí integrações e evoluí fluxos de **CRM, ER
 
 Integro **LLMs e ferramentas de IA** a sistemas reais para reduzir trabalho repetitivo e acelerar decisões: leitura de mensagens e documentos, classificação, tradução, extração de informações e apoio ao time comercial. Desenho esses fluxos com contexto de negócio, validação e rastreabilidade — não como uma vitrine isolada da operação.
 
+## Projetos para explorar
+
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <strong><a href="https://github.com/LuisInacioDasilva/atlas-order-api">Atlas Order API ↗</a></strong><br><br>
+      API Laravel para pedidos: autenticação, idempotência, transições versionadas, auditoria e painel local. Testes e CI.
+    </td>
+    <td width="50%" valign="top">
+      <strong><a href="https://github.com/LuisInacioDasilva/reconcile-db-lab">Reconcile DB Lab ↗</a></strong><br><br>
+      Laboratório de conciliação em PostgreSQL: integridade, divergências, consultas reproduzíveis e relatório verificável.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <strong><a href="https://github.com/LuisInacioDasilva/case-agent-workbench">Case Agent Workbench ↗</a></strong><br><br>
+      Triagem com agentes, base de conhecimento, validação de saída e avaliações. Demo determinística ou LLM local opcional.
+    </td>
+    <td width="50%" valign="top">
+      <strong><a href="https://github.com/LuisInacioDasilva/flowwatch-automations">Flowwatch Automations ↗</a></strong><br><br>
+      Automações com fila persistente, idempotência, retry, recuperação auditável e métricas operacionais.
+    </td>
+  </tr>
+</table>
+
 ## Contribuições em movimento
 
 <p align="center">

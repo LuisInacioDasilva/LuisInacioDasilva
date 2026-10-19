@@ -10,7 +10,6 @@
   <a href="https://github.com/LuisInacioDasilva?tab=repositories">
     <img src="https://img.shields.io/badge/Explorar_reposit%C3%B3rios-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Explorar repositórios" />
   </a>
-  <img src="https://komarev.com/ghpvc/?username=LuisInacioDasilva&label=VISITAS&color=0284C7&style=for-the-badge" alt="Contador de visitas do perfil" />
 </p>
 
 ## `> sobre_mim`

@@ -9,6 +9,7 @@ Execute a partir da raiz do repositório:
 ```bash
 node --check scripts/generate-contribution-bot.mjs
 node scripts/preview-contribution-bot.mjs
+node scripts/test-contribution-bot.mjs
 ```
 
 O preview usa um calendário sintético e grava `dist/contribution-bot.svg`. Abra o SVG para conferir a aparência e o percurso. O banner pode ser aberto diretamente como SVG. Nenhum token é necessário para o preview.

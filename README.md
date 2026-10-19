@@ -56,6 +56,6 @@ Integro **LLMs e ferramentas de IA** a sistemas reais para reduzir trabalho repe
 ## Contribuições em movimento
 
 <p align="center">
-  <img width="100%" alt="Robô animado percorrendo as contribuições de Luis da Silva" src="https://raw.githubusercontent.com/LuisInacioDasilva/LuisInacioDasilva/output/contribution-bot.svg?v=20261019f" />
+  <img width="100%" alt="Robô animado percorrendo as contribuições de Luis da Silva" src="https://raw.githubusercontent.com/LuisInacioDasilva/LuisInacioDasilva/output/contribution-bot.svg?v=20261019g" />
 </p>
 

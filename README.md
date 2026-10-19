@@ -7,8 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/LuisInacioDasilva?tab=repositories">Repositórios</a> ·
-  <a href="https://github.com/Innovation-Brindes">Innovation Brindes</a>
+  <a href="https://github.com/LuisInacioDasilva?tab=repositories">Ver meus repositórios</a>
 </p>
 
 ## Engenharia que sustenta a operação
@@ -25,13 +24,13 @@ Na **Innovation Brindes**, construí integrações e evoluí fluxos de **CRM, ER
     </td>
     <td width="50%" valign="top">
       <strong>02 / DADOS</strong><br><br>
-      SQL Server, PostgreSQL e MariaDB: consultas, modelagem e conciliação entre CRM e Sankhya. Investigação de divergências, integridade dos dados e histórico auditável das mudanças.
+      MariaDB, SQL Server e PostgreSQL: consultas, modelagem e conciliação entre CRM, ERPs e outros sistemas. Investigação de divergências, integridade dos dados e histórico auditável das mudanças.
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <strong>03 / INTEGRAÇÕES</strong><br><br>
-      Integrações da Innovation com Sankhya, WhatsApp, Google Drive e AWS S3. APIs, webhooks, documentos e mídia em buckets, com tratamento de falhas e reprocessamento.
+      Integrações da Innovation com ERPs, WhatsApp, Google Drive e AWS S3. APIs, webhooks, documentos e mídia em buckets, com tratamento de falhas e reprocessamento.
     </td>
     <td width="50%" valign="top">
       <strong>04 / AUTOMAÇÃO</strong><br><br>
@@ -57,6 +56,6 @@ Integro **LLMs e ferramentas de IA** a sistemas reais para reduzir trabalho repe
 ## Contribuições em movimento
 
 <p align="center">
-  <img width="100%" alt="Robô animado percorrendo as contribuições de Luis da Silva" src="https://raw.githubusercontent.com/LuisInacioDasilva/LuisInacioDasilva/output/contribution-bot.svg?v=20261019c" />
+  <img width="100%" alt="Robô animado percorrendo as contribuições de Luis da Silva" src="https://raw.githubusercontent.com/LuisInacioDasilva/LuisInacioDasilva/output/contribution-bot.svg?v=20261019d" />
 </p>
 

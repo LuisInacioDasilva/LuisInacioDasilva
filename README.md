@@ -77,10 +77,6 @@ problema real → regra de negócio → integração confiável → observabilid
   <img width="49%" src="https://streak-stats.demolab.com?user=LuisInacioDasilva&hide_border=true&background=0D1117&ring=38BDF8&fire=22C55E&currStreakLabel=38BDF8&sideLabels=CBD5E1&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=64748B&locale=pt_BR" alt="Sequência de contribuições no GitHub" />
 </div>
 
-<div align="center">
-  <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=LuisInacioDasilva&bg_color=0D1117&color=CBD5E1&line=38BDF8&point=22C55E&area=true&hide_border=true&custom_title=Contribui%C3%A7%C3%B5es%20recentes" alt="Gráfico de contribuições recentes" />
-</div>
-
 ---
 
 <div align="center">

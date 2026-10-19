@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/banner.svg" width="100%" alt="Luis Inácio — Backend Engineer: Laravel, PHP, APIs, SQL e automações" />
+  <img src="./assets/banner.svg" width="100%" alt="Luis da Silva — Backend Engineer: Laravel, PHP, APIs, SQL e automações" />
 </p>
 
 <p align="center">
@@ -74,13 +74,11 @@ final class ProductionMindset
 }
 ```
 
-## Contributions, agora em movimento.
+## Um bot patrulhando minhas contribuições.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LuisInacioDasilva/LuisInacioDasilva/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LuisInacioDasilva/LuisInacioDasilva/output/github-contribution-grid-snake.svg" />
-  <img width="100%" alt="Animação da cobra percorrendo as contribuições do GitHub" src="https://raw.githubusercontent.com/LuisInacioDasilva/LuisInacioDasilva/output/github-contribution-grid-snake.svg" />
-</picture>
+<p align="center">
+  <img width="100%" alt="Robô animado percorrendo a grade real de contribuições do GitHub" src="https://raw.githubusercontent.com/LuisInacioDasilva/LuisInacioDasilva/output/contribution-bot.svg" />
+</p>
 
 <p align="center">
   <code>build → observe → fix → repeat</code>

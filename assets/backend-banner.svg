@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Luis da Silva — Backend Engineer</title>
+  <desc id="desc">Banner animado com foco em Laravel, PHP, APIs, SQL e automações com LLM.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070A13" />
+      <stop offset="0.48" stop-color="#11142B" />
+      <stop offset="1" stop-color="#07131B" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A855F7" />
+      <stop offset="0.55" stop-color="#6366F1" />
+      <stop offset="1" stop-color="#22D3EE" />
+      <animate attributeName="x1" values="0;0.35;0" dur="7s" repeatCount="indefinite" />
+      <animate attributeName="x2" values="1;0.65;1" dur="7s" repeatCount="indefinite" />
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#7C3AED" stroke-opacity="0.11" stroke-width="1" />
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <clipPath id="cardClip">
+      <rect x="18" y="18" width="1164" height="324" rx="26" />
+    </clipPath>
+  </defs>
+
+  <style>
+    .sans { font-family: Inter, "Segoe UI", Arial, sans-serif; }
+    .mono { font-family: "JetBrains Mono", "Cascadia Code", Consolas, monospace; }
+    .orbit { animation: orbit 8s linear infinite; transform-origin: 1030px 105px; }
+    .orbit-reverse { animation: orbit 11s linear infinite reverse; transform-origin: 1030px 105px; }
+    .pulse { animation: pulse 2.4s ease-in-out infinite; }
+    .cursor { animation: blink 1s steps(2, start) infinite; }
+    .scan { animation: scan 6s linear infinite; }
+    .line-1 { animation: reveal 7s ease-in-out infinite; }
+    .line-2 { animation: reveal 7s ease-in-out 0.8s infinite; opacity: 0; }
+    .line-3 { animation: reveal 7s ease-in-out 1.6s infinite; opacity: 0; }
+    .line-4 { animation: reveal 7s ease-in-out 2.4s infinite; opacity: 0; }
+    @keyframes orbit { to { transform: rotate(360deg); } }
+    @keyframes pulse { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
+    @keyframes blink { 50% { opacity: 0; } }
+    @keyframes scan { from { transform: translateY(-340px); } to { transform: translateY(360px); } }
+    @keyframes reveal { 0%, 8% { opacity: 0; transform: translateY(5px); } 14%, 78% { opacity: 1; transform: translateY(0); } 90%, 100% { opacity: 0; } }
+  </style>
+
+  <rect width="1200" height="360" fill="#03050A" />
+  <rect x="18" y="18" width="1164" height="324" rx="26" fill="url(#bg)" stroke="url(#accent)" stroke-width="1.5" />
+  <g clip-path="url(#cardClip)">
+    <rect x="18" y="18" width="1164" height="324" fill="url(#grid)" />
+    <ellipse cx="170" cy="10" rx="360" ry="170" fill="#7C3AED" opacity="0.13" filter="url(#glow)" />
+    <ellipse cx="1080" cy="350" rx="340" ry="150" fill="#06B6D4" opacity="0.10" filter="url(#glow)" />
+    <rect class="scan" x="18" y="18" width="1164" height="2" fill="url(#accent)" opacity="0.35" />
+  </g>
+
+  <g class="sans">
+    <text x="70" y="74" fill="#A78BFA" font-size="14" font-weight="700" letter-spacing="4">BACKEND ENGINEER // SÃO PAULO</text>
+    <text x="68" y="143" fill="#F8FAFC" font-size="52" font-weight="800" letter-spacing="1">LUIS DA SILVA</text>
+    <rect x="70" y="164" width="472" height="3" rx="1.5" fill="url(#accent)" />
+    <text x="70" y="205" fill="#CBD5E1" font-size="21" font-weight="500">Laravel · PHP · APIs · SQL · LLM automation</text>
+  </g>
+
+  <g class="mono" font-size="13" font-weight="600">
+    <rect x="70" y="244" width="92" height="34" rx="8" fill="#151225" stroke="#A855F7" stroke-opacity="0.65" />
+    <text x="93" y="266" fill="#D8B4FE">PHP 8+</text>
+    <rect x="172" y="244" width="112" height="34" rx="8" fill="#211018" stroke="#FB7185" stroke-opacity="0.65" />
+    <text x="192" y="266" fill="#FDA4AF">LARAVEL</text>
+    <rect x="294" y="244" width="90" height="34" rx="8" fill="#071D24" stroke="#22D3EE" stroke-opacity="0.65" />
+    <text x="318" y="266" fill="#67E8F9">REST</text>
+    <rect x="394" y="244" width="118" height="34" rx="8" fill="#0D1B2A" stroke="#38BDF8" stroke-opacity="0.65" />
+    <text x="415" y="266" fill="#7DD3FC">SQL SERVER</text>
+  </g>
+
+  <g>
+    <rect x="640" y="54" width="480" height="252" rx="15" fill="#070912" stroke="#334155" />
+    <rect x="640" y="54" width="480" height="38" rx="15" fill="#121526" />
+    <path d="M640 77V69a15 15 0 0 1 15-15h450a15 15 0 0 1 15 15v23H640Z" fill="#121526" />
+    <circle cx="663" cy="73" r="5" fill="#FB7185" />
+    <circle cx="681" cy="73" r="5" fill="#FBBF24" />
+    <circle cx="699" cy="73" r="5" fill="#34D399" />
+    <text x="727" y="78" class="mono" fill="#64748B" font-size="12">production@backend:~</text>
+
+    <g class="mono" font-size="14">
+      <text class="line-1" x="668" y="126" fill="#C4B5FD"><tspan fill="#22D3EE">$</tspan> php artisan system:boot</text>
+      <text class="line-2" x="668" y="166" fill="#94A3B8"><tspan fill="#34D399">✓</tspan> Laravel API online</text>
+      <text class="line-3" x="668" y="206" fill="#94A3B8"><tspan fill="#34D399">✓</tspan> queues + integrations healthy</text>
+      <text class="line-4" x="668" y="246" fill="#94A3B8"><tspan fill="#34D399">✓</tspan> LLM tools connected</text>
+      <text x="668" y="279" fill="#22D3EE">ready</text>
+      <rect class="cursor" x="720" y="266" width="9" height="17" fill="#A855F7" />
+    </g>
+  </g>
+
+  <g opacity="0.9">
+    <circle cx="1065" cy="44" r="5" fill="#22D3EE" class="pulse" filter="url(#glow)" />
+    <g class="orbit">
+      <circle cx="1104" cy="105" r="3.5" fill="#A855F7" filter="url(#glow)" />
+    </g>
+    <g class="orbit-reverse">
+      <circle cx="1030" cy="72" r="2.5" fill="#67E8F9" filter="url(#glow)" />
+    </g>
+  </g>
+</svg>
+
+
+

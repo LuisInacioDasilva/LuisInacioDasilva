@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/banner.svg?v=2" width="100%" alt="Luis da Silva — Backend Engineer: Laravel, PHP, APIs, SQL e automações" />
+  <img src="./assets/backend-banner.svg" width="100%" alt="Luis da Silva — Backend Engineer: Laravel, PHP, APIs, SQL e automações" />
 </p>
 
 <p align="center">

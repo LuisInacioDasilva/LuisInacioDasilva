@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
+  <title id="title">Luis da Silva — engenharia back-end em produção</title>
+  <desc id="desc">Banner animado sobre sistemas back-end, dados, integrações com ERP e cloud, automação e IA aplicada.</desc>
+  <defs>
+    <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07131F"/>
+      <stop offset=".57" stop-color="#0A1C2B"/>
+      <stop offset="1" stop-color="#092520"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#4ADE80"/>
+      <stop offset=".52" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#818CF8"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102D3B"/>
+      <stop offset="1" stop-color="#0B202D"/>
+    </linearGradient>
+    <radialGradient id="ambient">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity=".20"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#7EA7BA" stroke-opacity=".075"/>
+    </pattern>
+    <filter id="glow" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="frame"><rect x="12" y="12" width="1176" height="366" rx="22"/></clipPath>
+  </defs>
+  <style>
+    .sans{font-family:Inter,"Segoe UI",Arial,sans-serif}
+    .mono{font-family:"Cascadia Code",Consolas,monospace}
+    .pulse{animation:pulse 2.8s ease-in-out infinite}
+    .flow{animation:flow 10s linear infinite}
+    .float{animation:float 4s ease-in-out infinite}
+    .sweep{animation:sweep 5s linear infinite}
+    @keyframes pulse{50%{opacity:.44}}
+    @keyframes flow{to{stroke-dashoffset:-72}}
+    @keyframes float{50%{transform:translateY(-3px)}}
+    @keyframes sweep{from{transform:translateX(-220px)}to{transform:translateX(1200px)}}
+    @media(prefers-reduced-motion:reduce){.pulse,.flow,.float,.sweep{animation:none}}
+  </style>
+  <rect width="1200" height="390" fill="#050C13"/>
+  <g clip-path="url(#frame)">
+    <rect x="12" y="12" width="1176" height="366" rx="22" fill="url(#surface)"/>
+    <rect x="12" y="12" width="1176" height="366" fill="url(#grid)"/>
+    <ellipse cx="510" cy="335" rx="430" ry="180" fill="url(#ambient)"/>
+    <path d="M-50 286H1210" stroke="url(#accent)" stroke-opacity=".12" stroke-width="96"/>
+    <rect x="0" y="13" width="1200" height="3" fill="url(#accent)"/>
+    <path class="sweep" d="M0 13H145" stroke="#D7FFF4" stroke-opacity=".75" stroke-width="3"/>
+  </g>
+  <rect x="12" y="12" width="1176" height="366" rx="22" fill="none" stroke="#34586A" stroke-width="2"/>
+
+  <g class="sans">
+    <rect x="52" y="47" width="13" height="13" rx="3" fill="#4ADE80" filter="url(#glow)" class="pulse"/>
+    <text x="79" y="59" class="mono" fill="#9BE9D9" font-size="15" font-weight="700" letter-spacing="2">BACK-END ENGINEERING / PROD</text>
+    <text x="50" y="151" fill="#F4FBFE" font-size="65" font-weight="800" letter-spacing="-3">LUIS DA SILVA</text>
+    <rect x="53" y="171" width="512" height="4" rx="2" fill="url(#accent)"/>
+    <text x="53" y="218" fill="#D2E9F0" font-size="26" font-weight="600">Desenvolvedor back-end pleno</text>
+    <text x="53" y="250" fill="#94B5C4" font-size="18">+5 anos conectando sistemas, dados e pessoas</text>
+  </g>
+  <g class="mono" font-size="14" font-weight="700">
+    <rect x="53" y="297" width="160" height="42" rx="9" fill="#102A37" stroke="#3B8B8F"/>
+    <circle cx="71" cy="318" r="4" fill="#4ADE80" class="pulse"/>
+    <text x="83" y="323" fill="#D9F8F2">APIs + NEGÓCIO</text>
+    <rect x="222" y="297" width="161" height="42" rx="9" fill="#102A37" stroke="#3B8B8F"/>
+    <circle cx="240" cy="318" r="4" fill="#22D3EE" class="pulse"/>
+    <text x="252" y="323" fill="#D9F8F2">DADOS + CLOUD</text>
+    <rect x="392" y="297" width="166" height="42" rx="9" fill="#102A37" stroke="#3B8B8F"/>
+    <circle cx="410" cy="318" r="4" fill="#818CF8" class="pulse"/>
+    <text x="422" y="323" fill="#D9F8F2">AUTOMAÇÃO + IA</text>
+  </g>
+
+  <g class="mono">
+    <rect x="620" y="39" width="542" height="312" rx="17" fill="#06141E" fill-opacity=".91" stroke="#375B69"/>
+    <path d="M620 82H1162" stroke="#345363"/>
+    <circle cx="645" cy="61" r="5" fill="#4ADE80" filter="url(#glow)" class="pulse"/>
+    <text x="661" y="66" fill="#97C4CC" font-size="14" font-weight="700" letter-spacing="1.5">SISTEMAS CONECTADOS</text>
+    <text x="1138" y="65" fill="#86E2BA" font-size="13" text-anchor="end">EM PRODUÇÃO</text>
+
+    <path class="flow" d="M797 145H840V181M986 181H1020V145M797 283H840V213M986 213H1020V283" fill="none" stroke="#4BCEB9" stroke-opacity=".67" stroke-width="2.5" stroke-dasharray="7 5"/>
+    <circle r="5" fill="#4ADE80" filter="url(#glow)"><animateMotion path="M797 145H840V181" dur="3.8s" repeatCount="indefinite"/></circle>
+    <circle r="5" fill="#22D3EE" filter="url(#glow)"><animateMotion path="M986 181H1020V145" dur="4.4s" repeatCount="indefinite"/></circle>
+    <circle r="5" fill="#818CF8" filter="url(#glow)"><animateMotion path="M797 283H840V213" dur="4.8s" repeatCount="indefinite"/></circle>
+    <circle r="5" fill="#4ADE80" filter="url(#glow)"><animateMotion path="M986 213H1020V283" dur="4.1s" repeatCount="indefinite"/></circle>
+
+    <g class="float">
+      <rect x="647" y="111" width="151" height="69" rx="10" fill="url(#card)" stroke="#3D8591"/>
+      <text x="663" y="137" fill="#7DE2D5" font-size="13">01 / OPERAÇÃO</text>
+      <text x="663" y="157" fill="#F2FCFE" font-size="17" font-weight="700">CRM · PEDIDOS</text>
+      <text x="663" y="173" fill="#9AB9C6" font-size="11">Layouts · Atendimento</text>
+    </g>
+    <g class="float">
+      <rect x="1013" y="111" width="125" height="69" rx="10" fill="url(#card)" stroke="#3D8591"/>
+      <text x="1028" y="137" fill="#7DE2D5" font-size="13">02 / ERP</text>
+      <text x="1028" y="157" fill="#F2FCFE" font-size="17" font-weight="700">SANKHYA</text>
+      <text x="1028" y="173" fill="#9AB9C6" font-size="11">Integração ERP</text>
+    </g>
+    <rect x="836" y="166" width="151" height="77" rx="12" fill="#113445" stroke="#5EEAD4" stroke-width="2" filter="url(#glow)"/>
+    <text x="853" y="192" fill="#9BE9D9" font-size="13">BACK-END / CORE</text>
+    <text x="853" y="219" fill="#F5FDFF" font-size="18" font-weight="700">APIs + REGRAS</text>
+    <rect x="647" y="249" width="151" height="69" rx="10" fill="url(#card)" stroke="#3D8591"/>
+    <text x="663" y="275" fill="#7DE2D5" font-size="13">03 / DADOS</text>
+    <text x="663" y="295" fill="#F2FCFE" font-size="16" font-weight="700">SQL · MariaDB</text>
+    <text x="663" y="311" fill="#9AB9C6" font-size="11">Postgres · Conciliação</text>
+    <rect x="1013" y="249" width="125" height="69" rx="10" fill="url(#card)" stroke="#3D8591"/>
+    <text x="1028" y="275" fill="#7DE2D5" font-size="13">04 / CLOUD + IA</text>
+    <text x="1028" y="295" fill="#F2FCFE" font-size="15" font-weight="700">S3 · LLMs</text>
+    <text x="1028" y="311" fill="#9AB9C6" font-size="11">Drive · AWS</text>
+    <circle cx="911" cy="204" r="61" fill="none" stroke="#22D3EE" stroke-opacity=".1" stroke-width="2"/>
+  </g>
+</svg>
+

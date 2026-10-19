@@ -52,11 +52,11 @@ Na **Innovation Brindes**, construí integrações e evoluí fluxos de **CRM, ER
 ## Tecnologias no meu repertório
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=c,cs,php,ts,nodejs,python,java,kotlin,postgres,mysql,sqlite,redis,aws,linux,git,githubactions&theme=dark&perline=16" alt="C, C#, PHP, TypeScript, Node.js, Python, Java, Kotlin, PostgreSQL, MySQL, SQLite, Redis, AWS, Linux, Git e GitHub Actions" />
+  <img src="https://skillicons.dev/icons?i=c,cs,dotnet,php,ts,nodejs,python,kotlin,go,postgres,mysql,sqlite,redis,aws,docker,linux,git,githubactions&theme=dark&perline=16" alt="C, C#, .NET, PHP, TypeScript, Node.js, Python, Kotlin, Go, PostgreSQL, MySQL, SQLite, Redis, AWS, Docker, Linux, Git e GitHub Actions" />
 </p>
 
 <p align="center">
-  <code>SQL Server</code> · <code>PostgreSQL</code> · <code>MariaDB</code> · <code>AWS S3</code> · <code>Google Drive</code> · <code>APIs</code> · <code>n8n</code> · <code>LLMs</code>
+  <code>ASP.NET Core</code> · <code>Laravel</code> · <code>SQL Server</code> · <code>PostgreSQL</code> · <code>MariaDB</code> · <code>AWS S3</code> · <code>Google Drive</code> · <code>APIs</code> · <code>n8n</code> · <code>LLMs</code>
 </p>
 
 ## IA aplicada e orquestração
@@ -84,6 +84,32 @@ Integro **LLMs e ferramentas de IA** a sistemas reais para reduzir trabalho repe
     <td width="50%" valign="top">
       <strong><a href="https://github.com/LuisInacioDasilva/flowwatch-automations">Flowwatch Automations ↗</a></strong><br><br>
       Automações com fila persistente, idempotência, retry, recuperação auditável e métricas operacionais.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <strong><a href="https://github.com/LuisInacioDasilva/bookstore">Bookstore ↗</a></strong><br><br>
+      Catálogo Laravel modernizado: descoberta de livros, cache resiliente, integração externa, interface responsiva e testes.
+    </td>
+    <td width="50%" valign="top">
+      <strong><a href="https://github.com/LuisInacioDasilva/signal-room">Signal Room ↗</a></strong><br><br>
+      Console de eventos em Node.js: ingestão assinada, idempotência, trilha append-only e atualização em tempo real por SSE.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <strong><a href="https://github.com/LuisInacioDasilva/relayforge-go">RelayForge Go ↗</a></strong><br><br>
+      Entrega de webhooks em Go com assinatura HMAC, reenvio controlado, armazenamento local e testes com detector de corrida.
+    </td>
+    <td width="50%" valign="top">
+      <strong><a href="https://github.com/LuisInacioDasilva/fulfillment-planner-kotlin">Fulfillment Planner ↗</a></strong><br><br>
+      Planejamento de estoque em Kotlin, alocação determinística sem overselling e relatório visual gerado a partir de TSV.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top">
+      <strong><a href="https://github.com/LuisInacioDasilva/ledger-audit-dotnet">Ledger Audit ↗</a></strong><br><br>
+      Ledger de dupla entrada em C# / .NET 10: validação de lançamentos, replay auditável, idempotência e console web.
     </td>
   </tr>
 </table>

@@ -1,0 +1,1953 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="270" viewBox="0 0 980 270" role="img" aria-labelledby="title desc">
+  <title id="title">Contribution Bot de LuisInacioDasilva</title>
+  <desc id="desc">Um robô animado percorre e ilumina as células da grade real de contribuições do GitHub.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111B" />
+      <stop offset="0.55" stop-color="#0A1E2A" />
+      <stop offset="1" stop-color="#0A2624" />
+    </linearGradient>
+    <linearGradient id="edge" x1="0" x2="1">
+      <stop offset="0" stop-color="#4ADE80" />
+      <stop offset="0.52" stop-color="#22D3EE" />
+      <stop offset="1" stop-color="#818CF8" />
+    </linearGradient>
+    <linearGradient id="shell" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#A7F3E5" />
+      <stop offset="0.55" stop-color="#43BDD1" />
+      <stop offset="1" stop-color="#238199" />
+    </linearGradient>
+    <linearGradient id="visor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#123747" />
+      <stop offset="1" stop-color="#06202E" />
+    </linearGradient>
+    <radialGradient id="eyes">
+      <stop offset="0" stop-color="#E5FFFF" />
+      <stop offset="0.55" stop-color="#84F2FF" />
+      <stop offset="1" stop-color="#2DD4BF" />
+    </radialGradient>
+    <radialGradient id="halo">
+      <stop offset="0" stop-color="#5EEAD4" stop-opacity="0.35" />
+      <stop offset="1" stop-color="#5EEAD4" stop-opacity="0" />
+    </radialGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+    <pattern id="microGrid" width="26" height="26" patternUnits="userSpaceOnUse">
+      <path d="M26 0H0V26" fill="none" stroke="#7DD3FC" stroke-opacity="0.035" />
+    </pattern>
+  </defs>
+  <style>
+    .sans { font-family: Inter, "Segoe UI", Arial, sans-serif; }
+    .mono { font-family: "JetBrains Mono", "Cascadia Code", Consolas, monospace; }
+    .eye { animation: blink 4.2s steps(2, start) infinite; }
+    .antenna { animation: ping 2.2s ease-in-out infinite; }
+    .body { animation: hover 2.8s ease-in-out infinite; }
+    .status { animation: ping 3s ease-in-out infinite; }
+    @keyframes blink { 48%, 53% { opacity: .14; } }
+    @keyframes ping { 0%, 100% { opacity: .55; } 50% { opacity: 1; } }
+    @keyframes hover { 50% { transform: translateY(-1.5px); } }
+    @media (prefers-reduced-motion: reduce) { .eye, .antenna, .body, .status { animation: none; } }
+  </style>
+
+  <rect width="980" height="270" rx="18" fill="url(#panel)" />
+  <rect x="1" y="1" width="978" height="268" rx="17" fill="none" stroke="#315563" stroke-width="2" />
+  <path d="M26 1H954" stroke="url(#edge)" stroke-opacity=".8" stroke-width="2" />
+  <rect x="47" y="89" width="886" height="146" rx="14" fill="#071720" stroke="#254B57" />
+  <rect x="47" y="89" width="886" height="146" rx="14" fill="url(#microGrid)" />
+  <ellipse cx="490" cy="204" rx="395" ry="70" fill="url(#halo)" opacity=".55" />
+
+  <rect x="43" y="27" width="4" height="36" rx="2" fill="url(#edge)" />
+  <text x="61" y="45" class="sans" fill="#F0FBFA" font-size="22" font-weight="700">Contribuições</text>
+  <text x="62" y="64" class="mono" fill="#83AEB7" font-size="11" letter-spacing="1.3">2026  /  GITHUB ACTIVITY</text>
+  <text x="932" y="48" class="sans" fill="#F0FBFA" font-size="25" font-weight="700" text-anchor="end">9.427</text>
+  <text x="931" y="65" class="mono" fill="#86C9B3" font-size="11" letter-spacing="1" text-anchor="end">CONTRIBUIÇÕES NO ANO</text>
+
+  <g><rect class="cell" x="68" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-10-19: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="68" y="130" width="11" height="11" rx="2.5" fill="#0E4429" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-10-20: 2 contributions</title>
+      <animate attributeName="fill" values="#0E4429;#C7FFE5;#0E4429;#0E4429" keyTimes="0;0.006;0.018;1" dur="84s" begin="23.75s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="23.75s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="68" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-10-21: 28 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="24.10s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="24.10s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="68" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-10-22: 40 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="47.85s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="47.85s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="68" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-10-23: 48 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="48.20s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="48.20s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="68" y="194" width="11" height="11" rx="2.5" fill="#26A641" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-10-24: 6 contributions</title>
+      <animate attributeName="fill" values="#26A641;#C7FFE5;#26A641;#26A641" keyTimes="0;0.006;0.018;1" dur="84s" begin="71.95s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="71.95s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="68" y="210" width="11" height="11" rx="2.5" fill="#26A641" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-10-25: 6 contributions</title>
+      <animate attributeName="fill" values="#26A641;#C7FFE5;#26A641;#26A641" keyTimes="0;0.006;0.018;1" dur="84s" begin="72.30s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="72.30s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="84" y="114" width="11" height="11" rx="2.5" fill="#26A641" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-10-26: 6 contributions</title>
+      <animate attributeName="fill" values="#26A641;#C7FFE5;#26A641;#26A641" keyTimes="0;0.006;0.018;1" dur="84s" begin="0.22s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="0.22s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="84" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-10-27: 37 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="23.52s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="23.52s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="84" y="146" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-10-28: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="84" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-10-29: 65 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="47.62s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="47.62s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="84" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-10-30: 15 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="48.43s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="48.43s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="84" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-10-31: 36 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="71.72s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="71.72s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="84" y="210" width="11" height="11" rx="2.5" fill="#006D32" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-01: 4 contributions</title>
+      <animate attributeName="fill" values="#006D32;#C7FFE5;#006D32;#006D32" keyTimes="0;0.006;0.018;1" dur="84s" begin="72.53s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="72.53s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="100" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-02: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="100" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-03: 31 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="23.30s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="23.30s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="100" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-04: 10 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="24.55s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="24.55s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="100" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-05: 43 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="47.40s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="47.40s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="100" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-06: 22 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="48.65s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="48.65s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="100" y="194" width="11" height="11" rx="2.5" fill="#26A641" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-07: 9 contributions</title>
+      <animate attributeName="fill" values="#26A641;#C7FFE5;#26A641;#26A641" keyTimes="0;0.006;0.018;1" dur="84s" begin="71.50s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="71.50s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="100" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-08: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="116" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-09: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="116" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-10: 20 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="23.07s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="23.07s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="116" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-11: 47 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="24.78s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="24.78s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="116" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-12: 20 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="47.17s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="47.17s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="116" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-13: 26 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="48.88s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="48.88s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="116" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-14: 21 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="71.27s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="71.27s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="116" y="210" width="11" height="11" rx="2.5" fill="#0E4429" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-15: 1 contribution</title>
+      <animate attributeName="fill" values="#0E4429;#C7FFE5;#0E4429;#0E4429" keyTimes="0;0.006;0.018;1" dur="84s" begin="72.98s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="72.98s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="132" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-16: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="132" y="130" width="11" height="11" rx="2.5" fill="#26A641" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-17: 9 contributions</title>
+      <animate attributeName="fill" values="#26A641;#C7FFE5;#26A641;#26A641" keyTimes="0;0.006;0.018;1" dur="84s" begin="22.85s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="22.85s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="132" y="146" width="11" height="11" rx="2.5" fill="#0E4429" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-18: 2 contributions</title>
+      <animate attributeName="fill" values="#0E4429;#C7FFE5;#0E4429;#0E4429" keyTimes="0;0.006;0.018;1" dur="84s" begin="25.00s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="25.00s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="132" y="162" width="11" height="11" rx="2.5" fill="#26A641" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-19: 7 contributions</title>
+      <animate attributeName="fill" values="#26A641;#C7FFE5;#26A641;#26A641" keyTimes="0;0.006;0.018;1" dur="84s" begin="46.95s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="46.95s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="132" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-20: 17 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="49.10s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="49.10s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="132" y="194" width="11" height="11" rx="2.5" fill="#26A641" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-21: 8 contributions</title>
+      <animate attributeName="fill" values="#26A641;#C7FFE5;#26A641;#26A641" keyTimes="0;0.006;0.018;1" dur="84s" begin="71.05s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="71.05s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="132" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-22: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="148" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-23: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="148" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-24: 49 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="22.62s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="22.62s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="148" y="146" width="11" height="11" rx="2.5" fill="#26A641" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-25: 7 contributions</title>
+      <animate attributeName="fill" values="#26A641;#C7FFE5;#26A641;#26A641" keyTimes="0;0.006;0.018;1" dur="84s" begin="25.23s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="25.23s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="148" y="162" width="11" height="11" rx="2.5" fill="#006D32" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-26: 4 contributions</title>
+      <animate attributeName="fill" values="#006D32;#C7FFE5;#006D32;#006D32" keyTimes="0;0.006;0.018;1" dur="84s" begin="46.72s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="46.72s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="148" y="178" width="11" height="11" rx="2.5" fill="#26A641" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-27: 6 contributions</title>
+      <animate attributeName="fill" values="#26A641;#C7FFE5;#26A641;#26A641" keyTimes="0;0.006;0.018;1" dur="84s" begin="49.33s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="49.33s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="148" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-28: 16 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="70.82s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="70.82s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="148" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-29: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="164" y="114" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-11-30: 12 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="1.35s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="1.35s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="164" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-01: 12 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="22.40s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="22.40s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="164" y="146" width="11" height="11" rx="2.5" fill="#006D32" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-02: 5 contributions</title>
+      <animate attributeName="fill" values="#006D32;#C7FFE5;#006D32;#006D32" keyTimes="0;0.006;0.018;1" dur="84s" begin="25.45s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="25.45s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="164" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-03: 26 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="46.50s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="46.50s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="164" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-04: 39 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="49.55s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="49.55s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="164" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-05: 35 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="70.60s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="70.60s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="164" y="210" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-06: 59 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="73.65s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="73.65s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="180" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-07: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="180" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-08: 15 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="22.17s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="22.17s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="180" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-09: 18 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="25.68s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="25.68s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="180" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-10: 26 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="46.27s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="46.27s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="180" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-11: 18 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="49.78s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="49.78s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="180" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-12: 14 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="70.37s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="70.37s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="180" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-13: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="196" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-14: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="196" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-15: 12 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="21.95s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="21.95s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="196" y="146" width="11" height="11" rx="2.5" fill="#26A641" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-16: 8 contributions</title>
+      <animate attributeName="fill" values="#26A641;#C7FFE5;#26A641;#26A641" keyTimes="0;0.006;0.018;1" dur="84s" begin="25.90s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="25.90s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="196" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-17: 12 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="46.05s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="46.05s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="196" y="178" width="11" height="11" rx="2.5" fill="#006D32" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-18: 3 contributions</title>
+      <animate attributeName="fill" values="#006D32;#C7FFE5;#006D32;#006D32" keyTimes="0;0.006;0.018;1" dur="84s" begin="50.00s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="50.00s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="196" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-19: 23 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="70.15s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="70.15s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="196" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-20: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="212" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-21: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="212" y="130" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-22: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="212" y="146" width="11" height="11" rx="2.5" fill="#0E4429" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-23: 1 contribution</title>
+      <animate attributeName="fill" values="#0E4429;#C7FFE5;#0E4429;#0E4429" keyTimes="0;0.006;0.018;1" dur="84s" begin="26.13s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="26.13s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="212" y="162" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-24: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="212" y="178" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-25: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="212" y="194" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-26: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="212" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-27: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="228" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-28: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="228" y="130" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-29: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="228" y="146" width="11" height="11" rx="2.5" fill="#26A641" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-30: 6 contributions</title>
+      <animate attributeName="fill" values="#26A641;#C7FFE5;#26A641;#26A641" keyTimes="0;0.006;0.018;1" dur="84s" begin="26.35s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="26.35s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="228" y="162" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2025-12-31: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="228" y="178" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-01: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="228" y="194" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-02: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="228" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-03: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="244" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-04: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="244" y="130" width="11" height="11" rx="2.5" fill="#26A641" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-05: 8 contributions</title>
+      <animate attributeName="fill" values="#26A641;#C7FFE5;#26A641;#26A641" keyTimes="0;0.006;0.018;1" dur="84s" begin="21.27s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="21.27s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="244" y="146" width="11" height="11" rx="2.5" fill="#006D32" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-06: 5 contributions</title>
+      <animate attributeName="fill" values="#006D32;#C7FFE5;#006D32;#006D32" keyTimes="0;0.006;0.018;1" dur="84s" begin="26.58s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="26.58s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="244" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-07: 46 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="45.37s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="45.37s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="244" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-08: 22 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="50.68s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="50.68s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="244" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-09: 15 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="69.48s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="69.48s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="244" y="210" width="11" height="11" rx="2.5" fill="#0E4429" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-10: 1 contribution</title>
+      <animate attributeName="fill" values="#0E4429;#C7FFE5;#0E4429;#0E4429" keyTimes="0;0.006;0.018;1" dur="84s" begin="74.78s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="74.78s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="260" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-11: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="260" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-12: 43 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="21.05s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="21.05s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="260" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-13: 17 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="26.80s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="26.80s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="260" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-14: 15 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="45.15s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="45.15s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="260" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-15: 20 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="50.90s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="50.90s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="260" y="194" width="11" height="11" rx="2.5" fill="#0E4429" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-16: 1 contribution</title>
+      <animate attributeName="fill" values="#0E4429;#C7FFE5;#0E4429;#0E4429" keyTimes="0;0.006;0.018;1" dur="84s" begin="69.25s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="69.25s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="260" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-17: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="276" y="114" width="11" height="11" rx="2.5" fill="#0E4429" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-18: 1 contribution</title>
+      <animate attributeName="fill" values="#0E4429;#C7FFE5;#0E4429;#0E4429" keyTimes="0;0.006;0.018;1" dur="84s" begin="2.92s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="2.92s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="276" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-19: 17 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="20.82s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="20.82s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="276" y="146" width="11" height="11" rx="2.5" fill="#26A641" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-20: 8 contributions</title>
+      <animate attributeName="fill" values="#26A641;#C7FFE5;#26A641;#26A641" keyTimes="0;0.006;0.018;1" dur="84s" begin="27.03s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="27.03s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="276" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-21: 80 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="44.92s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="44.92s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="276" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-22: 24 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="51.13s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="51.13s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="276" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-23: 33 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="69.03s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="69.03s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="276" y="210" width="11" height="11" rx="2.5" fill="#0E4429" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-24: 1 contribution</title>
+      <animate attributeName="fill" values="#0E4429;#C7FFE5;#0E4429;#0E4429" keyTimes="0;0.006;0.018;1" dur="84s" begin="75.23s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="75.23s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="292" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-25: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="292" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-26: 19 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="20.60s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="20.60s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="292" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-27: 11 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="27.25s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="27.25s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="292" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-28: 28 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="44.70s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="44.70s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="292" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-29: 63 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="51.35s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="51.35s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="292" y="194" width="11" height="11" rx="2.5" fill="#006D32" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-30: 5 contributions</title>
+      <animate attributeName="fill" values="#006D32;#C7FFE5;#006D32;#006D32" keyTimes="0;0.006;0.018;1" dur="84s" begin="68.80s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="68.80s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="292" y="210" width="11" height="11" rx="2.5" fill="#26A641" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-01-31: 9 contributions</title>
+      <animate attributeName="fill" values="#26A641;#C7FFE5;#26A641;#26A641" keyTimes="0;0.006;0.018;1" dur="84s" begin="75.45s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="75.45s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="308" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-01: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="308" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-02: 55 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="20.37s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="20.37s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="308" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-03: 37 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="27.48s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="27.48s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="308" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-04: 15 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="44.47s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="44.47s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="308" y="178" width="11" height="11" rx="2.5" fill="#0E4429" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-05: 1 contribution</title>
+      <animate attributeName="fill" values="#0E4429;#C7FFE5;#0E4429;#0E4429" keyTimes="0;0.006;0.018;1" dur="84s" begin="51.58s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="51.58s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="308" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-06: 23 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="68.58s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="68.58s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="308" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-07: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="324" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-08: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="324" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-09: 14 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="20.15s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="20.15s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="324" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-10: 13 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="27.70s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="27.70s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="324" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-11: 11 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="44.25s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="44.25s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="324" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-12: 35 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="51.80s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="51.80s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="324" y="194" width="11" height="11" rx="2.5" fill="#26A641" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-13: 8 contributions</title>
+      <animate attributeName="fill" values="#26A641;#C7FFE5;#26A641;#26A641" keyTimes="0;0.006;0.018;1" dur="84s" begin="68.35s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="68.35s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="324" y="210" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-14: 12 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="75.90s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="75.90s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="340" y="114" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-15: 34 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="3.82s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="3.82s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="340" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-16: 13 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="19.92s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="19.92s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="340" y="146" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-17: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="340" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-18: 16 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="44.02s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="44.02s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="340" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-19: 30 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="52.03s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="52.03s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="340" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-20: 77 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="68.13s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="68.13s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="340" y="210" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-21: 13 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="76.13s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="76.13s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="356" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-22: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="356" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-23: 10 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="19.70s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="19.70s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="356" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-24: 10 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="28.15s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="28.15s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="356" y="162" width="11" height="11" rx="2.5" fill="#26A641" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-25: 7 contributions</title>
+      <animate attributeName="fill" values="#26A641;#C7FFE5;#26A641;#26A641" keyTimes="0;0.006;0.018;1" dur="84s" begin="43.80s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="43.80s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="356" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-26: 27 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="52.25s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="52.25s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="356" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-27: 16 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="67.90s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="67.90s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="356" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-02-28: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="372" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-01: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="372" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-02: 14 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="19.47s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="19.47s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="372" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-03: 24 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="28.37s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="28.37s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="372" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-04: 10 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="43.57s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="43.57s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="372" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-05: 17 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="52.48s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="52.48s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="372" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-06: 19 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="67.68s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="67.68s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="372" y="210" width="11" height="11" rx="2.5" fill="#26A641" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-07: 6 contributions</title>
+      <animate attributeName="fill" values="#26A641;#C7FFE5;#26A641;#26A641" keyTimes="0;0.006;0.018;1" dur="84s" begin="76.58s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="76.58s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="388" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-08: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="388" y="130" width="11" height="11" rx="2.5" fill="#006D32" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-09: 4 contributions</title>
+      <animate attributeName="fill" values="#006D32;#C7FFE5;#006D32;#006D32" keyTimes="0;0.006;0.018;1" dur="84s" begin="19.25s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="19.25s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="388" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-10: 13 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="28.60s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="28.60s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="388" y="162" width="11" height="11" rx="2.5" fill="#26A641" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-11: 8 contributions</title>
+      <animate attributeName="fill" values="#26A641;#C7FFE5;#26A641;#26A641" keyTimes="0;0.006;0.018;1" dur="84s" begin="43.35s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="43.35s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="388" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-12: 19 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="52.70s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="52.70s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="388" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-13: 46 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="67.45s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="67.45s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="388" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-14: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="404" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-15: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="404" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-16: 34 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="19.02s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="19.02s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="404" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-17: 25 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="28.82s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="28.82s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="404" y="162" width="11" height="11" rx="2.5" fill="#26A641" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-18: 9 contributions</title>
+      <animate attributeName="fill" values="#26A641;#C7FFE5;#26A641;#26A641" keyTimes="0;0.006;0.018;1" dur="84s" begin="43.12s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="43.12s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="404" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-19: 16 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="52.93s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="52.93s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="404" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-20: 19 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="67.23s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="67.23s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="404" y="210" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-21: 48 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="77.03s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="77.03s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="420" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-22: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="420" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-23: 63 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="18.80s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="18.80s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="420" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-24: 64 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="29.05s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="29.05s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="420" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-25: 30 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="42.90s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="42.90s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="420" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-26: 39 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="53.15s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="53.15s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="420" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-27: 62 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="67.00s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="67.00s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="420" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-28: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="436" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-29: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="436" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-30: 69 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="18.57s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="18.57s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="436" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-03-31: 46 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="29.27s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="29.27s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="436" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-01: 12 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="42.67s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="42.67s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="436" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-02: 13 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="53.38s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="53.38s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="436" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-03: 10 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="66.78s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="66.78s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="436" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-04: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="452" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-05: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="452" y="130" width="11" height="11" rx="2.5" fill="#0E4429" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-06: 1 contribution</title>
+      <animate attributeName="fill" values="#0E4429;#C7FFE5;#0E4429;#0E4429" keyTimes="0;0.006;0.018;1" dur="84s" begin="18.35s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="18.35s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="452" y="146" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-07: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="452" y="162" width="11" height="11" rx="2.5" fill="#0E4429" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-08: 2 contributions</title>
+      <animate attributeName="fill" values="#0E4429;#C7FFE5;#0E4429;#0E4429" keyTimes="0;0.006;0.018;1" dur="84s" begin="42.45s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="42.45s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="452" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-09: 23 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="53.60s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="53.60s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="452" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-10: 22 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="66.55s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="66.55s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="452" y="210" width="11" height="11" rx="2.5" fill="#26A641" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-11: 8 contributions</title>
+      <animate attributeName="fill" values="#26A641;#C7FFE5;#26A641;#26A641" keyTimes="0;0.006;0.018;1" dur="84s" begin="77.70s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="77.70s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="468" y="114" width="11" height="11" rx="2.5" fill="#006D32" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-12: 5 contributions</title>
+      <animate attributeName="fill" values="#006D32;#C7FFE5;#006D32;#006D32" keyTimes="0;0.006;0.018;1" dur="84s" begin="5.62s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="5.62s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="468" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-13: 14 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="18.12s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="18.12s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="468" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-14: 35 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="29.72s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="29.72s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="468" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-15: 18 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="42.22s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="42.22s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="468" y="178" width="11" height="11" rx="2.5" fill="#006D32" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-16: 3 contributions</title>
+      <animate attributeName="fill" values="#006D32;#C7FFE5;#006D32;#006D32" keyTimes="0;0.006;0.018;1" dur="84s" begin="53.83s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="53.83s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="468" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-17: 37 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="66.33s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="66.33s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="468" y="210" width="11" height="11" rx="2.5" fill="#006D32" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-18: 3 contributions</title>
+      <animate attributeName="fill" values="#006D32;#C7FFE5;#006D32;#006D32" keyTimes="0;0.006;0.018;1" dur="84s" begin="77.93s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="77.93s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="484" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-19: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="484" y="130" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-20: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="484" y="146" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-21: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="484" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-22: 25 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="42.00s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="42.00s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="484" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-23: 60 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="54.05s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="54.05s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="484" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-24: 45 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="66.10s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="66.10s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="484" y="210" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-25: 37 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="78.15s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="78.15s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="500" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-26: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="500" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-27: 39 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="17.67s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="17.67s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="500" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-28: 44 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="30.17s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="30.17s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="500" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-29: 11 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="41.78s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="41.78s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="500" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-04-30: 31 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="54.28s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="54.28s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="500" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-01: 12 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="65.88s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="65.88s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="500" y="210" width="11" height="11" rx="2.5" fill="#26A641" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-02: 9 contributions</title>
+      <animate attributeName="fill" values="#26A641;#C7FFE5;#26A641;#26A641" keyTimes="0;0.006;0.018;1" dur="84s" begin="78.38s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="78.38s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="516" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-03: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="516" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-04: 57 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="17.45s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="17.45s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="516" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-05: 29 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="30.40s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="30.40s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="516" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-06: 47 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="41.55s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="41.55s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="516" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-07: 22 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="54.50s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="54.50s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="516" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-08: 18 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="65.65s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="65.65s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="516" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-09: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="532" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-10: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="532" y="130" width="11" height="11" rx="2.5" fill="#0E4429" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-11: 2 contributions</title>
+      <animate attributeName="fill" values="#0E4429;#C7FFE5;#0E4429;#0E4429" keyTimes="0;0.006;0.018;1" dur="84s" begin="17.22s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="17.22s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="532" y="146" width="11" height="11" rx="2.5" fill="#26A641" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-12: 7 contributions</title>
+      <animate attributeName="fill" values="#26A641;#C7FFE5;#26A641;#26A641" keyTimes="0;0.006;0.018;1" dur="84s" begin="30.62s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="30.62s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="532" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-13: 26 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="41.33s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="41.33s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="532" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-14: 55 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="54.73s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="54.73s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="532" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-15: 35 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="65.43s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="65.43s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="532" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-16: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="548" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-17: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="548" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-18: 17 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="17.00s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="17.00s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="548" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-19: 12 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="30.85s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="30.85s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="548" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-20: 29 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="41.10s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="41.10s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="548" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-21: 24 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="54.95s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="54.95s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="548" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-22: 20 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="65.20s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="65.20s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="548" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-23: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="564" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-24: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="564" y="130" width="11" height="11" rx="2.5" fill="#26A641" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-25: 9 contributions</title>
+      <animate attributeName="fill" values="#26A641;#C7FFE5;#26A641;#26A641" keyTimes="0;0.006;0.018;1" dur="84s" begin="16.77s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="16.77s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="564" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-26: 52 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="31.07s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="31.07s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="564" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-27: 17 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="40.88s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="40.88s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="564" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-28: 37 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="55.18s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="55.18s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="564" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-29: 38 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="64.98s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="64.98s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="564" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-30: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="580" y="114" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-05-31: 15 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="7.20s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="7.20s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="580" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-01: 42 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="16.55s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="16.55s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="580" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-02: 38 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="31.30s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="31.30s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="580" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-03: 35 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="40.65s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="40.65s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="580" y="178" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-04: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="580" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-05: 59 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="64.75s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="64.75s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="580" y="210" width="11" height="11" rx="2.5" fill="#006D32" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-06: 3 contributions</title>
+      <animate attributeName="fill" values="#006D32;#C7FFE5;#006D32;#006D32" keyTimes="0;0.006;0.018;1" dur="84s" begin="79.50s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="79.50s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="596" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-07: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="596" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-08: 16 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="16.32s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="16.32s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="596" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-09: 44 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="31.52s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="31.52s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="596" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-10: 24 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="40.43s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="40.43s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="596" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-11: 39 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="55.63s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="55.63s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="596" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-12: 33 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="64.53s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="64.53s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="596" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-13: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="612" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-14: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="612" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-15: 40 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="16.10s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="16.10s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="612" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-16: 35 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="31.75s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="31.75s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="612" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-17: 41 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="40.20s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="40.20s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="612" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-18: 33 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="55.85s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="55.85s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="612" y="194" width="11" height="11" rx="2.5" fill="#26A641" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-19: 7 contributions</title>
+      <animate attributeName="fill" values="#26A641;#C7FFE5;#26A641;#26A641" keyTimes="0;0.006;0.018;1" dur="84s" begin="64.30s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="64.30s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="612" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-20: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="628" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-21: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="628" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-22: 35 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="15.87s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="15.87s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="628" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-23: 24 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="31.97s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="31.97s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="628" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-24: 30 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="39.98s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="39.98s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="628" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-25: 15 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="56.07s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="56.07s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="628" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-26: 22 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="64.08s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="64.08s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="628" y="210" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-27: 14 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="80.18s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="80.18s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="644" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-28: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="644" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-29: 17 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="15.65s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="15.65s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="644" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-06-30: 50 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="32.20s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="32.20s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="644" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-01: 15 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="39.75s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="39.75s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="644" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-02: 27 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="56.30s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="56.30s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="644" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-03: 61 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="63.85s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="63.85s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="644" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-04: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="660" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-05: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="660" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-06: 28 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="15.42s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="15.42s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="660" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-07: 32 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="32.42s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="32.42s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="660" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-08: 31 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="39.53s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="39.53s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="660" y="178" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-09: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="660" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-10: 71 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="63.63s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="63.63s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="660" y="210" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-11: 18 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="80.63s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="80.63s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="676" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-12: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="676" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-13: 25 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="15.20s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="15.20s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="676" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-14: 19 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="32.65s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="32.65s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="676" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-15: 36 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="39.30s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="39.30s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="676" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-16: 14 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="56.75s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="56.75s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="676" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-17: 18 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="63.40s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="63.40s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="676" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-18: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="692" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-19: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="692" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-20: 24 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="14.97s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="14.97s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="692" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-21: 339 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="32.87s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="32.87s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="692" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-22: 54 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="39.08s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="39.08s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="692" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-23: 75 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="56.97s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="56.97s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="692" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-24: 60 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="63.18s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="63.18s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="692" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-25: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="708" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-26: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="708" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-27: 65 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="14.75s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="14.75s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="708" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-28: 101 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="33.10s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="33.10s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="708" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-29: 196 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="38.85s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="38.85s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="708" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-30: 195 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="57.20s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="57.20s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="708" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-07-31: 110 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="62.95s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="62.95s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="708" y="210" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-01: 85 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="81.30s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="81.30s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="724" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-02: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="724" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-03: 68 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="14.52s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="14.52s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="724" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-04: 53 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="33.32s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="33.32s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="724" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-05: 95 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="38.63s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="38.63s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="724" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-06: 138 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="57.42s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="57.42s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="724" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-07: 85 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="62.73s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="62.73s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="724" y="210" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-08: 55 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="81.53s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="81.53s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="740" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-09: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="740" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-10: 40 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="14.30s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="14.30s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="740" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-11: 80 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="33.55s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="33.55s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="740" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-12: 150 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="38.40s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="38.40s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="740" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-13: 45 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="57.65s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="57.65s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="740" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-14: 24 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="62.50s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="62.50s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="740" y="210" width="11" height="11" rx="2.5" fill="#26A641" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-15: 8 contributions</title>
+      <animate attributeName="fill" values="#26A641;#C7FFE5;#26A641;#26A641" keyTimes="0;0.006;0.018;1" dur="84s" begin="81.75s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="81.75s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="756" y="114" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-16: 22 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="9.67s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="9.67s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="756" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-17: 14 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="14.07s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="14.07s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="756" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-18: 27 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="33.77s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="33.77s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="756" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-19: 28 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="38.18s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="38.18s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="756" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-20: 33 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="57.87s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="57.87s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="756" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-21: 53 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="62.28s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="62.28s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="756" y="210" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-22: 14 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="81.98s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="81.98s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="772" y="114" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-23: 15 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="9.90s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="9.90s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="772" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-24: 57 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="13.85s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="13.85s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="772" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-25: 63 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="34.00s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="34.00s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="772" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-26: 36 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="37.95s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="37.95s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="772" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-27: 27 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="58.10s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="58.10s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="772" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-28: 32 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="62.05s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="62.05s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="772" y="210" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-29: 48 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="82.20s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="82.20s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="788" y="114" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-30: 17 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="10.12s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="10.12s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="788" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-08-31: 15 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="13.63s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="13.63s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="788" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-01: 16 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="34.22s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="34.22s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="788" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-02: 28 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="37.73s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="37.73s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="788" y="178" width="11" height="11" rx="2.5" fill="#006D32" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-03: 3 contributions</title>
+      <animate attributeName="fill" values="#006D32;#C7FFE5;#006D32;#006D32" keyTimes="0;0.006;0.018;1" dur="84s" begin="58.32s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="58.32s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="788" y="194" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-04: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="788" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-05: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="804" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-06: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="804" y="130" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-07: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="804" y="146" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-08: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="804" y="162" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-09: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="804" y="178" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-10: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="804" y="194" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-11: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="804" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-12: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="820" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-13: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="820" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-14: 13 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="13.18s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="13.18s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="820" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-15: 15 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="34.67s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="34.67s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="820" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-16: 32 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="37.28s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="37.28s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="820" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-17: 17 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="58.77s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="58.77s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="820" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-18: 32 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="61.38s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="61.38s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="820" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-19: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="836" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-20: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="836" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-21: 90 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="12.95s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="12.95s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="836" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-22: 65 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="34.90s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="34.90s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="836" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-23: 77 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="37.05s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="37.05s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="836" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-24: 124 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="59.00s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="59.00s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="836" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-25: 54 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="61.15s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="61.15s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="836" y="210" width="11" height="11" rx="2.5" fill="#006D32" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-26: 3 contributions</title>
+      <animate attributeName="fill" values="#006D32;#C7FFE5;#006D32;#006D32" keyTimes="0;0.006;0.018;1" dur="84s" begin="83.10s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="83.10s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="852" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-27: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="852" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-28: 56 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="12.73s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="12.73s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="852" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-29: 10 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="35.12s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="35.12s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="852" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-09-30: 37 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="36.83s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="36.83s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="852" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-10-01: 95 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="59.22s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="59.22s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="852" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-10-02: 111 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="60.93s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="60.93s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="852" y="210" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-10-03: 18 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="83.33s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="83.33s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="868" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-10-04: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="868" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-10-05: 75 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="12.50s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="12.50s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="868" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-10-06: 81 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="35.35s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="35.35s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="868" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-10-07: 13 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="36.60s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="36.60s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="868" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-10-08: 66 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="59.45s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="59.45s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="868" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-10-09: 48 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="60.70s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="60.70s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="868" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-10-10: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="884" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-10-11: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="884" y="130" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-10-12: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="884" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-10-13: 149 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="35.57s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="35.57s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="884" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-10-14: 116 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="36.38s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="36.38s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="884" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-10-15: 90 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="59.67s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="59.67s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="884" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-10-16: 56 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="60.48s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="60.48s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="884" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-10-17: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="900" y="114" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-10-18: 0 contributions</title>
+      
+      
+    </rect>
+<rect class="cell" x="900" y="130" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-10-19: 121 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="12.05s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="12.05s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="900" y="146" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-10-20: 43 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="35.80s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="35.80s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="900" y="162" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-10-21: 33 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="36.15s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="36.15s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="900" y="178" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-10-22: 79 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="59.90s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="59.90s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="900" y="194" width="11" height="11" rx="2.5" fill="#39D353" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-10-23: 52 contributions</title>
+      <animate attributeName="fill" values="#39D353;#C7FFE5;#39D353;#39D353" keyTimes="0;0.006;0.018;1" dur="84s" begin="60.25s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values=".6;2;.6;.6" keyTimes="0;0.006;0.018;1" dur="84s" begin="60.25s" repeatCount="indefinite" />
+    </rect>
+<rect class="cell" x="900" y="210" width="11" height="11" rx="2.5" fill="#111D24" stroke="#9DD5CF" stroke-opacity=".42" stroke-width=".6">
+      <title>2026-10-24: 0 contributions</title>
+      
+      
+    </rect></g>
+
+  <g transform="translate(73.5 119.5)">
+    <g>
+    <animateMotion dur="84s" calcMode="paced" repeatCount="indefinite" rotate="0" path="M 0 0 H 832 A 8 8 0 0 1 832 16 H 0 A 8 8 0 0 0 0 32 H 832 A 8 8 0 0 1 832 48 H 0 A 8 8 0 0 0 0 64 H 832 A 8 8 0 0 1 832 80 H 0 A 8 8 0 0 0 0 96 H 832" />
+    <circle cx="0" cy="0" r="24" fill="url(#halo)" />
+    <circle cx="0" cy="0" r="13" fill="none" stroke="#9CF5D5" stroke-opacity=".56" stroke-width="1" />
+    <g class="body">
+      <path d="M-12 5L-18 8M12 5L18 8" fill="none" stroke="#8CE6DE" stroke-width="2.2" stroke-linecap="round" />
+      <circle cx="-18" cy="8" r="2" fill="#4ADE80" />
+      <circle cx="18" cy="8" r="2" fill="#4ADE80" />
+      <rect x="-11" y="6" width="22" height="11" rx="5" fill="#0F5566" stroke="#7BE4D7" stroke-width="1.2" />
+      <path d="M-4 12H4" stroke="#8DF5C3" stroke-width="1.5" stroke-linecap="round" />
+      <path d="M-6 17L-7 19M6 17L7 19" stroke="#8CE6DE" stroke-width="2" stroke-linecap="round" />
+      <rect x="-16" y="-13" width="32" height="26" rx="9" fill="url(#shell)" stroke="#D5FFF4" stroke-width="1.5" />
+      <rect x="-12" y="-9" width="24" height="14" rx="6" fill="url(#visor)" />
+      <circle class="eye" cx="-5" cy="-3" r="2.6" fill="url(#eyes)" />
+      <circle class="eye" cx="5" cy="-3" r="2.6" fill="url(#eyes)" />
+      <path d="M-3 9Q0 11 3 9" fill="none" stroke="#176479" stroke-width="1.2" stroke-linecap="round" />
+      <path d="M0 -13V-17" stroke="#B5F8E8" stroke-width="1.8" stroke-linecap="round" />
+      <circle class="antenna" cx="0" cy="-19" r="2.6" fill="#4ADE80" filter="url(#glow)" />
+    </g>
+    </g>
+  </g>
+
+  <g class="mono" font-size="10">
+    <text x="62" y="255" fill="#7FA7AF">MENOS</text>
+    <rect x="114" y="247" width="10" height="10" rx="2" fill="#111D24" /><rect x="130" y="247" width="10" height="10" rx="2" fill="#0E4429" /><rect x="146" y="247" width="10" height="10" rx="2" fill="#006D32" /><rect x="162" y="247" width="10" height="10" rx="2" fill="#26A641" /><rect x="178" y="247" width="10" height="10" rx="2" fill="#39D353" />
+    <text x="205" y="255" fill="#7FA7AF">MAIS</text>
+    <circle cx="758" cy="252" r="3" fill="#4ADE80" class="status" />
+    <text x="770" y="255" fill="#93C8B2" letter-spacing=".7">CADA PONTO CONTA</text>
+  </g>
+</svg>
